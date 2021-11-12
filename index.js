@@ -16,7 +16,7 @@ function myFunction() {
 myFunction();
 
 //🚀🚀🚀 ⬇️ 📝 Explanation ⬇️ 📝 🚀🚀🚀: 
-
+// nestedFunction is able to access the variable internal because of closure. nestedFunction is a function nested within myFunction and because of closer, it is able to reach out of its own function and into myFunction to grab the value of internal.
 
 
 
@@ -28,10 +28,20 @@ myFunction();
     
 For example, `summation(4)` should return 10 because 1+2+3+4 is 10. Note, you may use a for loop for this function if you wish */
 
-function summation(/*Your Code Here*/) {
-  /*Your Code Here*/
-
+function summation(number) {
+  let counter = [];
+  for(let i = 0; i <= number; i++){
+    counter.push(i)
   }
+  const newNumber = counter.reduce(function(acc, item){
+    return acc + item;
+  },0);
+  return newNumber;
+}  
+console.log(summation(5));
+   
+  
+  
  
 
 // 🦁🦁🦁 Topic 2: ADVANCED Array Methods 🦁🦁🦁
