@@ -25,14 +25,33 @@ Demonstrate your understanding of this week's concepts by answering the followin
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read.
 
 1. Explain the differences between `.map`, `.reduce` and `.filter` and describe a use case for each. 
+    .map is an array method that creates a new array. It uses data from the original array and allows you to manipulate it without changing the original array. You may use this if you're trying to look at only a portion of a larger set of information
+
+    .reduce is an array method that is used to get a single value. It takes a starting value and goes through the array adding on each time it loops through. This would be helpful to use if you are trying to find the average of a total.
+
+    .filter is an array method that creates a new array. It is used to filter out specific information from an array and needs to be either true or false. If it is true it will push it into the new array, otherwise it will leave it out. This would be helpful to use if you are looking for a specific criteria from a set of data and only find the information that meets your criteria. 
+
 
 2. Explain the difference between a callback and a higher order function.
 
+    A callback function is a function that is passed as an argument inside of another function. A higher order function is a function that accepts a callback as an argument. 
+
 3. Explain what a closure is.
+
+    Closure is when an inner function needs to reach to an outer function to grab information/value/variable. 
 
 4. Describe the four principles of the 'this' keyword.
 
+    Window Binding - this is when you do not give 'this' enough context so it returns the whole window. This would be an error and not something we should aim to do. 
+
+    Implicit Binding - this is when the value of 'this' is implied based on what is to the left of the object. In order to use this you would need to create a new object/method and then assign 'this' to that new object/method. 
+
+    New Binding - This is when you create a new object and 'this' now refers to that new object. 
+
+    Explicit Binding - This is when you explicitly enter what you want 'this' to refer to by using .call, .apply, or .bind. 
+
 5. Why do we need super() in an extended class?
+    By adding super() to the extended class, it acquires attributes from it's parent class.
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 
